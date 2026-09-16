@@ -1,0 +1,8 @@
+<div class="select-color">
+  <h4>Select Colour</h4>
+  <div class="swatches">
+    @for (color of colors; track color) {
+      <span class="swatch" [title]="color">{{ color }}</span>
+    }
+  </div>
+</div>

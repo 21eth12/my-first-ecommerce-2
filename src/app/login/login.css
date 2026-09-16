@@ -1,0 +1,95 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 470px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 40px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.account-heading {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border: 1px solid #333;
+  border-radius: 2px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.error-text {
+  color: #b00020;
+  font-size: 12px;
+  text-align: left;
+  margin: -8px 0 12px 0;
+}
+
+.forgot-link {
+  color: #8B0000;
+  font-size: 13px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.login-box button[type="submit"] {
+  background-color: #8B0000;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.login-box button[type="submit"]:disabled {
+  background-color: #c9a3a3;
+  cursor: not-allowed;
+}
+
+.or-divider {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-buttons button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.social-buttons button:hover {
+  background-color: #f5f5f5;
+}

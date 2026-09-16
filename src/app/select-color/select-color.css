@@ -1,0 +1,16 @@
+.select-color h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.swatch {
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}

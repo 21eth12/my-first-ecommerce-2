@@ -1,0 +1,42 @@
+<footer class="site-footer" [ngStyle]="{ 'background-color': footerBg }">
+  <div class="footer-main">
+    <div class="footer-col" [ngClass]="{ 'brand-col': isBrandColumn }">
+      <h2 class="brand-logo">EMPIRE TEXTILES</h2>
+      <div class="socials">
+        <a href="https://x.com/empiretextiles" target="_blank" class="icon">🐦</a>
+        <a href="https://www.facebook.com/EmpireTextiles" target="_blank" class="icon">📘</a>
+        <a href="https://www.pinterest.com/empiretextiles/" target="_blank" class="icon">📌</a>
+        <a href="https://www.instagram.com/empiretextiles" target="_blank" class="icon">📷</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>{{ categoriesHeader | uppercase }}</h3>
+      <ul>
+        @for (cat of categories; track cat) {
+          <li><a href="#">{{ cat }}</a></li>
+        }
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>{{ quickLinksHeader | uppercase }}</h3>
+      <ul>
+        @for (link of quickLinks; track link) {
+          <li><a href="#">{{ link }}</a></li>
+        }
+      </ul>
+    </div>
+
+    <div class="footer-col newsletter-col">
+      <h3>{{ newsletterHeader | uppercase }}</h3>
+      <input type="email" placeholder="Enter Email Address" />
+      <button>SUBSCRIBE</button>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>©2023 Empire Textile. All Rights Reserved</span>
+    <span class="payment-icons">Visa Mastercard Amex PayPal Diners Discover</span>
+  </div>
+</footer>
